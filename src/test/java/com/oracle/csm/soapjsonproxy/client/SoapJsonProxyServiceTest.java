@@ -7,7 +7,7 @@ public class SoapJsonProxyServiceTest {
         final Pessoa p = new Pessoa();
         p.setCpf("000.000.000-00");
         p.setId(1L);
-        p.setNome("John Dow");
+        p.setNome("John Doe");
         System.out.println(ws.getSoapJsonProxyPortTypePort().callJson(p));
     }
 }
