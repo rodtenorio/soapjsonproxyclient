@@ -17,11 +17,13 @@ import javax.xml.ws.WebServiceFeature;
  * Generated source version: 2.2
  * 
  */
-@WebServiceClient(name = "SoapJsonProxyService", targetNamespace = "http://ws.soapjsonproxy.csm.oracle.com/", wsdlLocation = "http://129.152.132.107/soapjsonproxy/SoapJsonProxyService?WSDL")
+@WebServiceClient(name = "SoapJsonProxyService", targetNamespace = "http://ws.soapjsonproxy.csm.oracle.com/", wsdlLocation = "http://localhost:7101/soapjsonproxy/SoapJsonProxyService?WSDL")
 public class SoapJsonProxyService
     extends Service
 {
 
+    //http://129.152.132.107
+    
     private final static URL SOAPJSONPROXYSERVICE_WSDL_LOCATION;
     private final static WebServiceException SOAPJSONPROXYSERVICE_EXCEPTION;
     private final static QName SOAPJSONPROXYSERVICE_QNAME = new QName("http://ws.soapjsonproxy.csm.oracle.com/", "SoapJsonProxyService");
@@ -30,7 +32,7 @@ public class SoapJsonProxyService
         WebServiceException e = null;
         URL url = null;
         try {
-            url = new URL(com.oracle.csm.soapjsonproxy.client.SoapJsonProxyService.class.getResource("."), "http://129.152.132.107/soapjsonproxy/SoapJsonProxyService?WSDL");
+            url = new URL(com.oracle.csm.soapjsonproxy.client.SoapJsonProxyService.class.getResource("."), "http://localhost:7101/soapjsonproxy/SoapJsonProxyService?WSDL");
         } catch (MalformedURLException murl) {
             e = new WebServiceException(murl);
         }
